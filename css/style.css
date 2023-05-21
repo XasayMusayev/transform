@@ -1,0 +1,136 @@
+.container{
+    background-image: url(/Photoss/images.jfif);
+    /* background-position: center; */
+    /* background-size: cover; */
+    vertical-align: bottom;
+    width: 100%;
+    height: 1500px;
+
+}
+
+.sun{
+    width: 30%;
+    transform: translate(175%,75%);
+    animation: suna 100s linear infinite;
+    position: relative;
+
+
+}
+@keyframes suna {
+    from{
+        transform: rotate(0deg);
+        
+    }
+    to{
+          transform: rotate(360deg);  
+    }
+    
+}
+
+.marsclas{
+    width: 250px;
+    top: 39%;
+    /* left: -20%; */
+    
+}
+
+.mars{
+    width: 10%;
+    animation: marsa  10s linear infinite;
+    position: absolute;
+
+    left: -25%;
+    top: 45%;
+
+}
+
+@keyframes marsa {
+    0%{
+        transform: rotate(0deg);
+        left: 0%;
+        top: 50%;
+
+    }
+
+    20%{
+        top: 40%;
+    }
+
+    35%{
+        top: 25%;
+    }
+
+    40%{
+        top: 10%;
+    } 
+    50%{
+        top: 0%;
+    }
+    55%{
+        top: -5%;
+    }
+    75%{
+        top: -20%;
+    }
+
+    85%{
+        top: -30%;
+    }
+
+    100%{
+        transform: rotate(360deg);
+        left: 100%;
+        top: 0%;
+
+    }
+    
+}
+
+
+.yer{
+    width: 120px;
+    position: absolute;
+    top: 500px;
+    transform: translate(-30%);
+    animation: yera 100s cubic-bezier(.05,.55,.05,.98) infinite;
+
+    
+}
+
+@keyframes yera{
+
+    from{
+        top: 500px;
+        left: 0;
+    }   
+    to{
+        top: 0%;
+        left: 100%;
+    }
+
+}
+
+
+.saturn{
+    width: 195px;
+    position: absolute;
+    top: 95%;
+    transform: translate(-40px);
+    animation: saturna 100s cubic-bezier(0,1.99,1,1.99) infinite;
+    overflow-x: hidden;
+
+}
+
+@keyframes saturna {
+
+    from{
+        top: 95%;
+        left: 0%;
+    }
+
+    to{
+        top: 1%;
+        left: 80%;
+    }
+    
+}
